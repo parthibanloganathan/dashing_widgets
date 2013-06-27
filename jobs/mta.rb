@@ -129,12 +129,14 @@ SCHEDULER.every $DISPLAY, :first_in => '5s' do |job|
       $index = 0
     end
 
-    line = $final_hash[$index]['line']
-    name = $final_hash[$index]['name']
-    direction = $final_hash[$index]['direction']
+    if $final_hash.size > 0
+      line = $final_hash[$index]['line']
+      name = $final_hash[$index]['name']
+      direction = $final_hash[$index]['direction']
 
-    size = $final_hash[$index]['time'].size
-    time = $final_hash[$index]['time'][1..size]
+      size = $final_hash[$index]['time'].size
+      time = $final_hash[$index]['time'][1..size]
+    end
     $index = $index + 1
   end
 
