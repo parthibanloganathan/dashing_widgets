@@ -6,6 +6,9 @@ require 'time'
 # target_stops = ['116 St - Columbia University', '8 St - NYU']
 # target_lines = ['1','2','N']
 # This will give you info on the trains on the 1, 2 and N at 116th St - Columbia University and 8 St - NYU
+# You can get these names by downloading http://www.mta.info/developers/data/nyct/subway/google_transit.zip and
+# checking for valid stop names under the file called 'stops'
+ 
 
 target_stops = ['Houston St', 'Spring St']
 target_lines = ['1','2','C','E']
